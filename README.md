@@ -7,3 +7,4 @@ Tools:
 -babel
 -webpack
 -sass
+-mysql
