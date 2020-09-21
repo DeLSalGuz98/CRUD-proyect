@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  outline: none;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  background-color: #DA0000;
+  display: inline-flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+header h1 {
+  color: white;
+  font-size: 50px;
+}
+header span {
+  margin: 15px 10px;
+}
+header span a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  outline: none;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  padding: 5px;
+}
+.container .input_container {
+  width: 100%;
+  height: 40%;
+}
+.container .input_container .input_task {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+  top: 15px;
+  background-color: white;
+  box-shadow: 3px 3px 20px black;
+  padding: 5px;
+}
+.container .input_container .input_task .task_name_container .task_name {
+  border: solid black 1px;
+  width: 90%;
+  height: 25px;
+  margin: 5px 5%;
+  padding: 5px;
+  text-align: center;
+}
+.container .input_container .input_task .task_description_container .task_description {
+  border: solid black 1px;
+  width: 90%;
+  height: auto;
+  margin: 5px 5%;
+  padding: 5px;
+  resize: none;
+}
+.container .input_container .input_task .task_button_container button {
+  background-color: #DA0000;
+  color: white;
+  width: 90%;
+  margin: 5px 5%;
+  padding: 10px 0;
+  border: none;
+}
+.container .task_container {
+  width: 100%;
+  height: 60%;
+}
+.container .task_container .task_section {
+  width: 100%;
+  height: 40px;
+  background-color: #8C0E0E;
+  padding: 10px;
+}
+.container .task_container .task_section h3 {
+  color: white;
+  text-align: center;
+}
+.container .task_container .card_tasks_cotainer {
+  width: 100%;
+  height: 300px;
+  margin: 10px 0;
+  padding: 10px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.container .task_container .card_tasks_cotainer .card_task {
+  width: 100%;
+  background-color: white;
+  box-shadow: 1px 1px 15px black;
+  padding: 5px;
+  margin: 10px 0;
+}
+.container .task_container .card_tasks_cotainer .card_task .title_container {
+  padding: 5px;
+  width: 80%;
+  height: auto;
+  margin: 5px 10%;
+}
+.container .task_container .card_tasks_cotainer .card_task .description_container {
+  border: solid black 1px;
+  padding: 5px;
+  width: 80%;
+  height: auto;
+  margin: 5px 10%;
+}
+.container .task_container .card_tasks_cotainer .card_task .button_container {
+  padding: 5px;
+  width: 80%;
+  height: auto;
+  margin: 5px 10%;
+}
+.container .task_container .card_tasks_cotainer .card_task .button_container .buttons {
+  width: 100%;
+  justify-content: space-between;
+  display: inline-flex;
+}
+.container .task_container .card_tasks_cotainer .card_task .button_container .buttons button {
+  border: none;
+  width: 40%;
+  padding: 5px 0;
+  color: white;
+}
+.container .task_container .card_tasks_cotainer .card_task .button_container .buttons .edit {
+  background-color: #DA0000;
+}
+.container .task_container .card_tasks_cotainer .card_task .button_container .buttons .delete {
+  background-color: #8C0E0E;
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+  .container {
+    width: 100%;
+    height: 200vh;
+  }
+  .container .input_container .input_task {
+    width: 60%;
+    padding: 15px 5px;
+  }
+  .container .task_container {
+    width: 100%;
+    height: 60%;
+  }
+  .container .task_container .task_section {
+    width: 90%;
+    margin: 0 5%;
+  }
+  .container .task_container .card_tasks_cotainer .card_task {
+    width: 80%;
+    margin: 10px 10%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container .input_container .input_task {
+    position: relative;
+    top: 25px;
+    padding: 10px;
+  }
+  .container .input_container .input_task .task_name_container .task_name {
+    border: solid black 1px;
+    width: 90%;
+    height: 35px;
+    margin: 5px 5%;
+    padding: 5px;
+    font-size: 20px;
+  }
+  .container .input_container .input_task .task_description_container .task_description {
+    border: solid black 1px;
+    width: 90%;
+    height: auto;
+    margin: 5px 5%;
+    padding: 5px;
+    font-size: 20px;
+  }
+  .container .input_container .input_task .task_button_container button {
+    font-size: 20px;
+  }
+  .container .task_container {
+    padding: 10px;
+  }
+  .container .task_container .task_section {
+    height: 60px;
+    padding: 15px;
+  }
+  .container .task_container .task_section h3 {
+    font-size: 30px;
+  }
+  .container .task_container .card_tasks_cotainer {
+    height: 500px;
+  }
+  .container .task_container .card_tasks_cotainer .card_task {
+    width: 80%;
+    margin: 20px 10%;
+  }
+  .container .task_container .card_tasks_cotainer .card_task .title_container {
+    font-size: 25px;
+  }
+  .container .task_container .card_tasks_cotainer .card_task .description_container {
+    border: solid black 1px;
+    font-size: 25px;
+  }
+  .container .task_container .card_tasks_cotainer .card_task .button_container {
+    font-size: 25px;
+  }
+  .container .task_container .card_tasks_cotainer .card_task .button_container .buttons button {
+    font-size: 25px;
+  }
+  .container .task_container .card_tasks_cotainer .card_task .button_container .buttons .edit {
+    background-color: #DA0000;
+  }
+  .container .task_container .card_tasks_cotainer .card_task .button_container .buttons .delete {
+    background-color: #8C0E0E;
+  }
+}
+@media (min-width: 1025px) {
+  .container {
+    padding: 20px;
+    display: inline-flex;
+    height: 88vh;
+  }
+  .container .input_container {
+    width: 50%;
+    height: 40%;
+  }
+  .container .input_container .input_task {
+    width: 50%;
+    position: relative;
+    top: 25px;
+  }
+  .container .input_container .input_task .task_button_container button {
+    cursor: pointer;
+  }
+  .container .input_container .input_task .task_button_container button:hover {
+    transform: scale(1.01);
+    letter-spacing: 1px;
+  }
+  .container .task_container {
+    width: 50%;
+    height: 100%;
+  }
+  .container .task_container .card_tasks_cotainer {
+    height: 500px;
+    margin: 10px 0;
+  }
+  .container .task_container .card_tasks_cotainer::-webkit-scrollbar {
+    width: 2px;
+    background: transparent;
+  }
+  .container .task_container .card_tasks_cotainer:hover::-webkit-scrollbar-thumb {
+    width: 2px;
+    background-color: #8C0E0E;
+  }
+  .container .task_container .card_tasks_cotainer .card_task {
+    width: 70%;
+    margin: 20px 15%;
+  }
+  .container .task_container .card_tasks_cotainer .card_task .button_container .buttons .edit {
+    background-color: #DA0000;
+    cursor: pointer;
+  }
+  .container .task_container .card_tasks_cotainer .card_task .button_container .buttons .edit:hover {
+    transform: scale(1.2);
+  }
+  .container .task_container .card_tasks_cotainer .card_task .button_container .buttons .delete {
+    background-color: #8C0E0E;
+    cursor: pointer;
+  }
+  .container .task_container .card_tasks_cotainer .card_task .button_container .buttons .delete:hover {
+    transform: scale(1.2);
+  }
+}
+
+/*# sourceMappingURL=Styles.css.map */
